@@ -132,6 +132,23 @@ pytest tests/ -v
 
 ---
 
+## Public Demo Deployment
+
+`render.yaml` defines a FastAPI service and a static frontend. To deploy them
+from GitHub, create a Blueprint in Render and connect this repository. Render
+will read the blueprint and build both services. Once deployment completes,
+open the `prep-frontend` service URL.
+
+The blueprint sets `VITE_API_URL` on the frontend and `CORS_ORIGINS` on the API
+to connect the two services. If you change either service name, update the
+matching URL in `render.yaml` and redeploy. The free API service may take a
+short time to wake after inactivity.
+
+This is a public research prototype. Use synthetic demo data only; do not enter
+real patient information.
+
+---
+
 ## API
 
 | Method | Endpoint | Description |
