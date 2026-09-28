@@ -137,7 +137,7 @@ pytest tests/ -v
 `render.yaml` defines a FastAPI service and a static frontend. To deploy them
 from GitHub, create a Blueprint in Render and connect this repository. Render
 will read the blueprint and build both services. Once deployment completes,
-open the `prep-frontend` service URL.
+open the `prep-frontend-tenq` service URL.
 
 The blueprint sets `VITE_API_URL` on the frontend and `CORS_ORIGINS` on the API
 to connect the two services. If you change either service name, update the

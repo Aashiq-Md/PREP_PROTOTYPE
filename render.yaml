@@ -1,6 +1,6 @@
 services:
   - type: web
-    name: prep-api
+    name: prep-prototype
     runtime: python
     plan: free
     rootDir: backend
@@ -11,7 +11,7 @@ services:
         value: https://prep-frontend-tenq.onrender.com
 
   - type: web
-    name: prep-frontend
+    name: prep-frontend-tenq
     runtime: static
     rootDir: frontend
     buildCommand: npm install && npm run build
