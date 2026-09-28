@@ -1,0 +1,5 @@
+patient_id,label,age,gender,insurance,prior_admissions_12mo,los_days,n_diagnoses,n_procedures,charlson_index,n_medications,high_risk_med,emergency_adm,race,estimated_risk,risk_band,age_group
+DEMO-001,Lower Risk,45,F,Private,0,2,3,1,0,2,0,0,White,0.168,Lower,18-50
+DEMO-002,Moderate Risk,67,M,Medicare,1,5,8,3,3,7,0,1,Black/AA,0.362,Moderate,66-75
+DEMO-003,Higher Risk,78,M,Medicaid,3,12,14,6,7,15,1,1,Hispanic,0.7310000000000001,Higher,76-85
+DEMO-004,Strong Explainability Example,72,F,Medicare,2,8,11,4,5,12,1,0,Asian,0.5469999999999999,Higher,66-75

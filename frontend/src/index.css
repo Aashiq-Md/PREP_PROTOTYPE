@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-navy-950 text-slate-100 font-sans antialiased;
+  }
+  * {
+    @apply box-border;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-navy-900 border border-navy-700 rounded-xl p-5;
+  }
+  .card-sm {
+    @apply bg-navy-900 border border-navy-700 rounded-lg p-4;
+  }
+  .badge-lower {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-emerald-900/60 text-emerald-300 border border-emerald-700/50;
+  }
+  .badge-moderate {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-amber-900/60 text-amber-300 border border-amber-700/50;
+  }
+  .badge-higher {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-red-900/60 text-red-300 border border-red-700/50;
+  }
+  .badge-info {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-blue-900/60 text-blue-300 border border-blue-700/50;
+  }
+  .btn-primary {
+    @apply px-4 py-2 bg-blue-600 hover:bg-blue-500 text-white rounded-lg font-medium text-sm transition-colors disabled:opacity-50 disabled:cursor-not-allowed;
+  }
+  .btn-secondary {
+    @apply px-4 py-2 bg-navy-700 hover:bg-navy-600 text-slate-200 rounded-lg font-medium text-sm transition-colors border border-navy-600;
+  }
+  .btn-ghost {
+    @apply px-4 py-2 text-slate-400 hover:text-slate-200 hover:bg-navy-800 rounded-lg font-medium text-sm transition-colors;
+  }
+  .input-field {
+    @apply w-full bg-navy-800 border border-navy-600 rounded-lg px-3 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-1 focus:ring-blue-500 focus:border-blue-500;
+  }
+  .label {
+    @apply block text-xs font-medium text-slate-400 mb-1;
+  }
+  .section-title {
+    @apply text-sm font-semibold text-slate-300 uppercase tracking-wider;
+  }
+  .disclaimer-box {
+    @apply bg-amber-950/40 border border-amber-800/50 rounded-lg p-3 text-xs text-amber-300/80;
+  }
+}

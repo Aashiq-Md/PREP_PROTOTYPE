@@ -1,0 +1,25 @@
+# PREP backend + ML pipeline dependencies.
+#
+# Requires a 64-bit interpreter (3.11+): numpy and pandas publish no 32-bit
+# wheels, so a 32-bit Python fails at install and then crashes at import with
+# an OpenBLAS memory-allocation error.
+#
+#   py -3.14 -m pip install -r backend/requirements.txt
+#
+# Lower bounds rather than hard pins: the PREP demo path is verified on
+# Python 3.14 / numpy 2.4 / pandas 3.0 (see docs/methodology.md,
+# "Verified environment"), while the originally pinned older releases have no
+# cp314 wheels at all.
+fastapi>=0.111
+uvicorn[standard]>=0.29
+pydantic>=2.7
+pandas>=2.2
+numpy>=1.26
+scikit-learn>=1.4
+lightgbm>=4.3
+xgboost>=2.0
+shap>=0.45          # optional — only needed for real TreeExplainer output
+joblib>=1.4
+python-dotenv>=1.0
+pytest>=8.0         # test suite (tests/test_prep.py)
+httpx>=0.27         # optional — starlette TestClient

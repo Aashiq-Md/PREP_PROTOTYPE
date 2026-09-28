@@ -1,0 +1,44 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.env
+
+# Data — NEVER commit patient data
+data/mimic-iv/
+data/mimic_demo/
+data/*.csv
+data/*.gz
+data/*.pkl
+data/*.json
+!demo/demo_patients.json
+
+# Models — large artifacts
+models/*.pkl
+models/*.joblib
+# Regenerated model metadata + reports (contain machine-specific paths)
+models/*.json
+
+# Test / tooling caches
+.pytest_cache/
+
+# Node
+node_modules/
+frontend/dist/
+frontend/.vite/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Outputs
+outputs/
+*.log
